@@ -139,6 +139,122 @@
                 // expected output: 1,2,20,20,20,20,20,20,20,20  
             </script> 
         </div>
+        <DIV>
+            <h1>filter() Method</h1>
+            <p>
+                The filter() method creates a new array with all elements that pass the test implemented by the provided function. This method fills all the elements of an array from a start index to an end index with a static value. The filter() method does not apply the function for array elements without values.
+            </p>
+            <script type="text/javascript">  
+                //JavaScript to illustrate filter() method  
+                function JavaTpoint(value)  
+                { return value>=5;  
+                }  
+                     // Input array  
+                  var arr= [1,2,3,4,5,6,7,8,9,10];   
+                  var result=arr.filter(JavaTpoint);   
+                  document.write(result);   
+                  
+                // expected output: arr[Output: 5,6,7,8,9,10]      
+            </script>  
+        </DIV>
+        <div>
+            <h1>find() Method</h1>
+            <p>
+                The JavaScript find() method is used to get the value of the first element in the array that satisfies the provided condition. The find() method apply the function once for each element present in the array. The function returns a true value, if it is found in the array and does not check the remaining value. Otherwise,it returns undefined.
+            </p>
+            <script type="text/javascript">  
+                // JavaScript to illustrate find() method  
+                function JavaTpoint(value)  
+                {  
+                return value >12;  
+                }  
+                 // Input array  
+                var arr = [1,2,3,4,5,6,7,8,9,12,11,14];  
+                var result = arr.find(JavaTpoint);  
+                document.write(result)   
+                // expected output: arr[Output:14]  
+            </script><hr>
+            <script type="text/javascript">  
+                // JavaScript to illustrate find() method  
+                function JavaTpoint(value)  
+                {  
+                return value ==15;  
+                }  
+                 // Input array  
+                var arr = [1,2,3,4,5,6,7,8,9,12,11,14];  
+                var result = arr.find(JavaTpoint);  
+                document.write(result)   
+                // expected output: arr[Output: undefined]   
+            </script> 
+        </div>
+        <div>
+            <h1>findIndex() Method</h1>
+            <p>
+                The JavaScript findIndex() method provides the index of the first element in the array that completes the given test. If the test is not satisfied, it will return -1.
+            </p>
+            <script type="text/javascript">  
+                // JavaScript to illustrate findIndex() method  
+                function JavaTpoint(value)  
+                {  
+                return value >34;  
+                }  
+                 // Input array  
+                var arr = [1,2,3,4,5,6,7,8,9,12,11,14];  
+                var result = arr.findIndex(JavaTpoint);  
+                document.write(result)// expected output: arr[Output:-1]   
+            </script> <hr>
+            <script type="text/javascript">  
+                //JavaScript to illustrate findIndex() method  
+                function JavaTpoint(value)  
+                {  
+                return value ==6;  
+                }  
+                 // Input array  
+                var arr = [1,2,3,4,5,6,7,8,9,12,11,14];  
+                var result = arr.findIndex(JavaTpoint);  
+                document.write(result)   
+                // expected output: arr[Output:5]  
+            </script>   
+        </div>
+        <div>
+            <h1>forEach() Method</h1>
+            <p>
+                The JavaScript forEach() method calls the provided function once for each element of the array. forEach() method does not execute the function for array elements without values.
+            </p>
+            <script type="text/javascript">  
+                // JavaScript to illustrate forEach() method  
+                function isMore() {  
+                   
+                    //  array  
+                    var items = [1, 29, 47];  
+                    var javaTpoint = [];  
+                   
+                    items.forEach(function(item){  
+                        javaTpoint.push(item*2);  
+                    });  
+                   
+                    document.write(javaTpoint);  
+                // expected output: arr[Output:2,58,94]  
+                }  
+                isMore();  
+            </script><hr>
+            <script type="text/javascript">  
+                // JavaScript to illustrate forEach() method  
+                var array1 = ['core java', 'C', 'C++'];  
+                  
+                  
+                array1.forEach(function(element)  
+                {  
+                  document.write(element+"<br/>"  
+                +"<br/>")});  
+                // expected output:  
+                //core java  
+                   
+                //C  
+                   
+                //C++  
+            </script>   
+        </div>
 
 </body>
 </html>
